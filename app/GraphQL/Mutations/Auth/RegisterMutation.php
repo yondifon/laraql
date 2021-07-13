@@ -3,6 +3,7 @@
 namespace App\GraphQL\Mutations\Auth;
 
 use App\Models\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
 
 class RegisterMutation
@@ -29,6 +30,10 @@ class RegisterMutation
 
     protected function createUser($data)
     {
-        return User::create($data);
+        $user = User::create($data);
+
+        event(new Registered($user));
+
+        return $user;
     }
 }

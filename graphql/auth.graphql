@@ -7,22 +7,22 @@ type AuthPayload {
 
 input UserLoginInput {
     "User Email"
-    email: String! @rules(apply: ["email", "exists:users,email"])
+    email: String! @rules(apply: ["required", "email", "exists:users,email"])
     "User's password"
-    password: String! @rules(apply: ["string", "min:6"])
+    password: String! @rules(apply: ["required", "string", "min:6"])
     "Token Name (Device Name, or whatever)"
-    tokenName: String
+    tokenName: String!
 }
 
 input UserRegistrationInput {
     "User's Name"
-    name: String! @rules(apply: ["string"])
+    name: String! @rules(apply: ["required", "string"])
     "User Email"
-    email: String! @rules(apply: ["email", "unique:users,email"])
+    email: String! @rules(apply: ["required", "email", "unique:users,email"])
     "User's password"
     password: String! @rules(apply: ["string", "min:6"])
     "Token Name (Device Name, or whatever)"
-    tokenName: String
+    tokenName: String!
 }
 
 extend type Query {

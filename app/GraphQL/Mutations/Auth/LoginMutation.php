@@ -37,6 +37,9 @@ class LoginMutation
                 'email'    => 'exists:users',
                 'password' => 'current_password',
             ],
+            [
+                'password.current_password' => 'The password or email is incorrect.',
+            ]
         );
     }
 }
