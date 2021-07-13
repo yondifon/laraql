@@ -1,8 +1,13 @@
 {
-    "name": "laravel/laravel",
+    "name": "malico/laraql",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "The Laravel GraphQL Starter Kit ",
+    "keywords": [
+        "framework",
+        "graphql",
+        "API",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
