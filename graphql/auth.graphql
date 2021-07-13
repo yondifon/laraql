@@ -1,0 +1,47 @@
+type AuthPayload {
+    "User access token"
+    token: String
+    "Authtenticated User"
+    viewer: User
+}
+
+input UserLoginInput {
+    "User Email"
+    email: String! @rules(apply: ["email", "exists:users,email"])
+    "User's password"
+    password: String! @rules(apply: ["string", "min:6"])
+    "Token Name (Device Name, or whatever)"
+    tokenName: String
+}
+
+input UserRegistrationInput {
+    "User's Name"
+    name: String! @rules(apply: ["string"])
+    "User Email"
+    email: String! @rules(apply: ["email", "unique:users,email"])
+    "User's password"
+    password: String! @rules(apply: ["string", "min:6"])
+    "Token Name (Device Name, or whatever)"
+    tokenName: String
+}
+
+extend type Query {
+    """
+    Get authenticated User
+    """
+    viewer: User @auth
+}
+
+extend type Mutation {
+    """
+    Attempt user authentication with credentials
+    """
+    login(input: UserLoginInput! @spread): AuthPayload!
+        @field(resolver: "Auth\\LoginMutation")
+
+    """
+    Register user account
+    """
+    register(input: UserRegistrationInput! @spread): AuthPayload!
+        @field(resolver: "Auth\\RegisterMutation")
+}

@@ -1,0 +1,24 @@
+"""
+Represent's a user in the system.
+"""
+type User {
+    "User's id"
+    id: ID
+    "User's Name."
+    name: String
+    "User's Email."
+    email: String
+    "Is user verified?"
+    isVerified: Boolean @method(name: "isVerified")
+}
+
+extend type Query {
+    """
+    Get all users registered on th the platform
+    """
+    users: [User!]! @paginate(defaultCount: 10)
+    """
+    Get a unique user
+    """
+    user(id: ID @eq): User @find
+}

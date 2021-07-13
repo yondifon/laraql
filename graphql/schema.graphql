@@ -1,0 +1,28 @@
+"A date string with format `Y-m-d`, e.g. `2011-05-23`."
+scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+
+"A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
+scalar DateTime
+    @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+
+"""
+Current App Details
+"""
+type App {
+    "App name"
+    name: String!
+    "App Environment"
+    environment: String!
+    "Laravel Version"
+    laravelVersion: String!
+    "PHP Version"
+    phpVersion: String!
+}
+
+type Query {
+    "Get app details"
+    app: App
+}
+
+#import auth.graphql
+#import user.graphql
