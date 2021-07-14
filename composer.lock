@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6227847708d5e798e1cda0d64ed6ac07",
+    "content-hash": "af53a17762a465b572d3bc57f9891014",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1513,6 +1513,53 @@
                 }
             ],
             "time": "2021-01-18T20:58:21+00:00"
+        },
+        {
+            "name": "malico/laravel-graphiql",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yondifon/laravel-graphiql.git",
+                "reference": "aa48c36da1529295bd766af2e2fde10bd34f7213"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yondifon/laravel-graphiql/zipball/aa48c36da1529295bd766af2e2fde10bd34f7213",
+                "reference": "aa48c36da1529295bd766af2e2fde10bd34f7213",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Malico\\GraphiQL\\GraphiQLServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Malico\\GraphiQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Malico",
+                    "email": "hi@malico.me"
+                }
+            ],
+            "description": "GraphiQL in Laravel Application",
+            "support": {
+                "issues": "https://github.com/yondifon/laravel-graphiql/issues",
+                "source": "https://github.com/yondifon/laravel-graphiql/tree/0.1"
+            },
+            "time": "2021-07-14T04:03:45+00:00"
         },
         {
             "name": "monolog/monolog",

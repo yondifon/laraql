@@ -15,7 +15,5 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
     },
-    "dependencies": {
-        "vue": "^2.6.14"
-    }
+    "dependencies": {}
 }

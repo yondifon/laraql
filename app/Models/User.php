@@ -43,6 +43,6 @@ class User extends Authenticatable
 
     public function isVerified()
     {
-        return \is_null($this->email_verified_at);
+        return ! is_null($this->email_verified_at);
     }
 }
