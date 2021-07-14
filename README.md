@@ -5,7 +5,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 This is a starter kit with all what you need to have a Laravel Project with API served over GraphQL. It uses (https://lighthouse-php.com/). Off the bet, this kit has
 - Authententication
 - GraphiQL (with Explorer)
--Basic Tests
+- Basic Tests
 
 ## Installation
 ```bash 
