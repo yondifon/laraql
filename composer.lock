@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af53a17762a465b572d3bc57f9891014",
+    "content-hash": "d7bdacbace91fffed06ed4cebf508060",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1808,16 +1808,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v5.15.0",
+            "version": "v5.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "fa26722ef1d3241ecbeb4f4fea816e610450e9e9"
+                "reference": "04108243c4a93b475b4f7f348e586ef36589c0aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/fa26722ef1d3241ecbeb4f4fea816e610450e9e9",
-                "reference": "fa26722ef1d3241ecbeb4f4fea816e610450e9e9",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/04108243c4a93b475b4f7f348e586ef36589c0aa",
+                "reference": "04108243c4a93b475b4f7f348e586ef36589c0aa",
                 "shasum": ""
             },
             "require": {
@@ -1840,6 +1840,7 @@
             "require-dev": {
                 "bensampo/laravel-enum": "^1.28.3 || ^2 || ^3",
                 "ergebnis/composer-normalize": "^2.2.2",
+                "finwe/phpstan-faker": "^0.1.0",
                 "laravel/framework": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
                 "laravel/legacy-factories": "^1",
                 "laravel/lumen-framework": "5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8",
@@ -1848,14 +1849,14 @@
                 "mockery/mockery": "^1",
                 "nunomaduro/larastan": "^0.6 || ^0.7",
                 "orchestra/testbench": "3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4 || ^5 || ^6",
-                "phpbench/phpbench": "1.0.0-alpha4",
+                "phpbench/phpbench": "^1",
                 "phpstan/phpstan": "0.12.89",
                 "phpstan/phpstan-mockery": "^0.12.5",
                 "phpstan/phpstan-phpunit": "^0.12.17",
                 "phpunit/phpunit": "^7.5 || ^8.4 || ^9",
                 "predis/predis": "^1.1",
                 "pusher/pusher-php-server": "^4 || ^5",
-                "rector/rector": "^0.9",
+                "rector/rector": "^0.11",
                 "thecodingmachine/phpstan-safe-rule": "^1",
                 "vimeo/psalm": "^4.7"
             },
@@ -1874,6 +1875,7 @@
                     },
                     "providers": [
                         "Nuwave\\Lighthouse\\LighthouseServiceProvider",
+                        "Nuwave\\Lighthouse\\Auth\\AuthServiceProvider",
                         "Nuwave\\Lighthouse\\GlobalId\\GlobalIdServiceProvider",
                         "Nuwave\\Lighthouse\\OrderBy\\OrderByServiceProvider",
                         "Nuwave\\Lighthouse\\Pagination\\PaginationServiceProvider",
@@ -1933,7 +1935,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-01T07:30:36+00:00"
+            "time": "2021-09-01T10:06:12+00:00"
         },
         {
             "name": "opis/closure",
@@ -7946,5 +7948,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
