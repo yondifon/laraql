@@ -18,7 +18,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "malico/laravel-graphiql": "^0.1.0",
-        "nuwave/lighthouse": "^5.15"
+        "nuwave/lighthouse": "5.23.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
