@@ -22,7 +22,7 @@
     },
     "require-dev": {
         "facade/ignition": "2.11.0",
-        "fakerphp/faker": "1.16.0",
+        "fakerphp/faker": "1.19.0",
         "laravel/sail": "1.8.5",
         "mockery/mockery": "1.4.3",
         "nunomaduro/collision": "5.5.0",
