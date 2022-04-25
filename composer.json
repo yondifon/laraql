@@ -16,7 +16,7 @@
         "guzzlehttp/guzzle": "7.3.0",
         "laravel/framework": "8.50.0",
         "laravel/sanctum": "2.11.2",
-        "laravel/tinker": "2.6.1",
+        "laravel/tinker": "2.7.2",
         "malico/laravel-graphiql": "0.1",
         "nuwave/lighthouse": "5.23.0"
     },
