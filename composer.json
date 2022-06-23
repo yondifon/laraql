@@ -14,7 +14,7 @@
         "fideloper/proxy": "4.4.1",
         "fruitcake/laravel-cors": "2.0.4",
         "guzzlehttp/guzzle": "7.3.0",
-        "laravel/framework": "8.50.0",
+        "laravel/framework": "8.83.17",
         "laravel/sanctum": "2.11.2",
         "laravel/tinker": "2.6.1",
         "malico/laravel-graphiql": "0.1",
